@@ -1,0 +1,29 @@
+CRITICAL - 2023-10-17 02:59:01 --> Call to undefined function App\Controllers\force_download()
+in APPPATH\Controllers\PostController.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->exportWholeDatabaseToCSV()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\Videos\\blog2\\public\\index.php')
+CRITICAL - 2023-10-17 03:05:28 --> Call to undefined function App\Controllers\force_download()
+in APPPATH\Controllers\PostController.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->exportWholeDatabaseToCSV()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\Videos\\blog2\\public\\index.php')
+CRITICAL - 2023-10-17 03:06:10 --> Call to undefined function App\Controllers\force_download()
+in APPPATH\Controllers\PostController.php on line 228.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->exportWholeDatabaseToCSV()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\Videos\\blog2\\public\\index.php')
+ERROR - 2023-10-17 05:52:17 --> Error al ejecutar mysqldump: array (
+)
+ERROR - 2023-10-17 05:52:21 --> Error al ejecutar mysqldump: array (
+)
+ERROR - 2023-10-17 05:54:06 --> Error al ejecutar mysqldump: array (
+)
+ERROR - 2023-10-17 05:54:50 --> Error al ejecutar mysqldump: array (
+)

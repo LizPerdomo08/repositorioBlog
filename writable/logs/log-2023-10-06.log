@@ -1,0 +1,529 @@
+ERROR - 2023-10-06 01:11:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'aquí va tu consulta' at line 1 in D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('aqu\xC3\xAD va tu con...', 0)
+#1 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('aqu\xC3\xAD va tu con...')
+#2 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('aqu\xC3\xAD va tu con...')
+#3 D:\Lizbeth Perdomo\Documents\blog2\app\Controllers\PostController.php(86): CodeIgniter\Database\BaseConnection->query('aqu\xC3\xAD va tu con...')
+#4 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Lizbeth Perdomo\Documents\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 D:\Lizbeth Perdomo\Documents\blog2\system\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perd...')
+#9 {main}
+CRITICAL - 2023-10-06 01:11:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'aquí va tu consulta' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(86): CodeIgniter\Database\BaseConnection->query('aquí va tu consulta')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+ERROR - 2023-10-06 01:12:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'aquí va tu consulta' at line 1 in D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('aqu\xC3\xAD va tu con...', 0)
+#1 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('aqu\xC3\xAD va tu con...')
+#2 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('aqu\xC3\xAD va tu con...')
+#3 D:\Lizbeth Perdomo\Documents\blog2\app\Controllers\PostController.php(86): CodeIgniter\Database\BaseConnection->query('aqu\xC3\xAD va tu con...')
+#4 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Lizbeth Perdomo\Documents\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 D:\Lizbeth Perdomo\Documents\blog2\system\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perd...')
+#9 {main}
+CRITICAL - 2023-10-06 01:12:26 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'aquí va tu consulta' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(86): CodeIgniter\Database\BaseConnection->query('aquí va tu consulta')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:13:15 --> Undefined variable $postsPorAutor
+in APPPATH\Views\posts\ejercicio06.php on line 16.
+ 1 APPPATH\Views\posts\ejercicio06.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postsPorAutor', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio06.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio06.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 5 APPPATH\Controllers\PostController.php(95): view('posts/ejercicio06', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:20:21 --> Undefined variable $postsEscritosPorHombres
+in APPPATH\Views\posts\ejercicio07.php on line 43.
+ 1 APPPATH\Views\posts\ejercicio07.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postsEscritosPorHombres', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 43)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(126): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:24:06 --> Undefined array key "peph23"
+in APPPATH\Views\posts\ejercicio07.php on line 45.
+ 1 APPPATH\Views\posts\ejercicio07.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "peph23"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(126): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:24:23 --> Undefined array key "peph23"
+in APPPATH\Views\posts\ejercicio07.php on line 45.
+ 1 APPPATH\Views\posts\ejercicio07.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "peph23"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(126): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:25:11 --> Undefined array key "peph23"
+in APPPATH\Views\posts\ejercicio07.php on line 45.
+ 1 APPPATH\Views\posts\ejercicio07.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "peph23"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(126): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:25:13 --> Undefined array key "peph23"
+in APPPATH\Views\posts\ejercicio07.php on line 45.
+ 1 APPPATH\Views\posts\ejercicio07.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "peph23"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(126): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:28:20 --> Undefined array key "peph23"
+in APPPATH\Views\posts\ejercicio07.php on line 45.
+ 1 APPPATH\Views\posts\ejercicio07.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "peph23"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(126): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:29:28 --> Undefined array key "peph23"
+in APPPATH\Views\posts\ejercicio07.php on line 45.
+ 1 APPPATH\Views\posts\ejercicio07.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "peph23"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(126): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:32:41 --> Undefined variable $postsEscritosPorHombres2022
+in APPPATH\Controllers\PostController.php on line 121.
+ 1 APPPATH\Controllers\PostController.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postsEscritosPorHombres2022', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Controllers\\PostController.php', 121)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:32:59 --> Undefined variable $postsEscritosPorMujeres2
+in APPPATH\Views\posts\ejercicio07.php on line 61.
+ 1 APPPATH\Views\posts\ejercicio07.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postsEscritosPorMujeres2', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 61)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(124): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:39:06 --> Undefined variable $postsEscritosPorHombres2023
+in APPPATH\Views\posts\ejercicio07.php on line 48.
+ 1 APPPATH\Views\posts\ejercicio07.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postsEscritosPorHombres2023', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 48)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(124): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:41:49 --> Undefined variable $postsEscritosPorHombres2023
+in APPPATH\Controllers\PostController.php on line 128.
+ 1 APPPATH\Controllers\PostController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postsEscritosPorHombres2023', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Controllers\\PostController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:41:57 --> Undefined variable $postsEscritosPorHombres2023
+in APPPATH\Controllers\PostController.php on line 128.
+ 1 APPPATH\Controllers\PostController.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $postsEscritosPorHombres2023', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Controllers\\PostController.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:42:14 --> Undefined array key "peph"
+in APPPATH\Views\posts\ejercicio07.php on line 48.
+ 1 APPPATH\Views\posts\ejercicio07.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "peph"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 48)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(131): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:42:40 --> Undefined array key "peph"
+in APPPATH\Views\posts\ejercicio07.php on line 48.
+ 1 APPPATH\Views\posts\ejercicio07.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "peph"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 48)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(131): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:43:53 --> Undefined variable $peph
+in APPPATH\Views\posts\ejercicio07.php on line 48.
+ 1 APPPATH\Views\posts\ejercicio07.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $peph', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 48)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(131): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:43:57 --> Undefined variable $peph
+in APPPATH\Views\posts\ejercicio07.php on line 48.
+ 1 APPPATH\Views\posts\ejercicio07.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $peph', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 48)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(131): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:44:02 --> Undefined array key "peph23"
+in APPPATH\Views\posts\ejercicio07.php on line 48.
+ 1 APPPATH\Views\posts\ejercicio07.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "peph23"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 48)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(131): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:50:42 --> Undefined array key "peph23"
+in APPPATH\Views\posts\ejercicio07.php on line 44.
+ 1 APPPATH\Views\posts\ejercicio07.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "peph23"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(131): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:55:24 --> Undefined array key "peph23"
+in APPPATH\Views\posts\ejercicio07.php on line 16.
+ 1 APPPATH\Views\posts\ejercicio07.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "peph23"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(131): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:55:27 --> Undefined array key "peph23"
+in APPPATH\Views\posts\ejercicio07.php on line 16.
+ 1 APPPATH\Views\posts\ejercicio07.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "peph23"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 16)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(131): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:56:11 --> Undefined array key "peph23"
+in APPPATH\Views\posts\ejercicio07.php on line 44.
+ 1 APPPATH\Views\posts\ejercicio07.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "peph23"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(131): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 01:56:13 --> Undefined array key "peph23"
+in APPPATH\Views\posts\ejercicio07.php on line 44.
+ 1 APPPATH\Views\posts\ejercicio07.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "peph23"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(131): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 02:01:14 --> Undefined array key "ph23"
+in APPPATH\Views\posts\ejercicio07.php on line 44.
+ 1 APPPATH\Views\posts\ejercicio07.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ph23"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php', 44)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio07.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio07', [], true)
+ 5 APPPATH\Controllers\PostController.php(131): view('posts/ejercicio07', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio07()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 02:09:01 --> Undefined array key "ppa"
+in APPPATH\Views\posts\ejercicio06.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio06.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ppa"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio06.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio06.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 5 APPPATH\Controllers\PostController.php(154): view('posts/ejercicio06', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 02:23:00 --> Undefined array key "ccategory"
+in APPPATH\Views\posts\ejercicio06.php on line 10.
+ 1 APPPATH\Views\posts\ejercicio06.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ccategory"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio06.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio06.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio06', [], true)
+ 5 APPPATH\Controllers\PostController.php(154): view('posts/ejercicio06', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+ERROR - 2023-10-06 02:28:32 --> mysqli_sql_exception: Unknown column 'categoria' in 'field list' in D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('select\r\n\t\t"Cate...', 0)
+#1 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select\r\n\t\t"Cate...')
+#2 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select\r\n\t\t"Cate...')
+#3 D:\Lizbeth Perdomo\Documents\blog2\app\Controllers\PostController.php(141): CodeIgniter\Database\BaseConnection->query('select\r\n\t\t"Cate...')
+#4 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+#5 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Lizbeth Perdomo\Documents\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 D:\Lizbeth Perdomo\Documents\blog2\system\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perd...')
+#9 {main}
+CRITICAL - 2023-10-06 02:28:32 --> Unknown column 'categoria' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(141): CodeIgniter\Database\BaseConnection->query('select
+		"Categoría" AS Tipo,
+		categoria AS Nombre,
+		SUM(cantidad) AS Cantidad
+	from
+		posts
+	group by
+		categoria')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+ERROR - 2023-10-06 16:58:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'aquí va tu consulta' at line 1 in D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('aqu\xC3\xAD va tu con...', 0)
+#1 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('aqu\xC3\xAD va tu con...')
+#2 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('aqu\xC3\xAD va tu con...')
+#3 D:\Lizbeth Perdomo\Documents\blog2\app\Controllers\PostController.php(88): CodeIgniter\Database\BaseConnection->query('aqu\xC3\xAD va tu con...')
+#4 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+#5 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Lizbeth Perdomo\Documents\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 D:\Lizbeth Perdomo\Documents\blog2\system\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perd...')
+#9 {main}
+CRITICAL - 2023-10-06 16:58:27 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'aquí va tu consulta' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(88): CodeIgniter\Database\BaseConnection->query('aquí va tu consulta')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio06()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+ERROR - 2023-10-06 17:00:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by autor' at line 2 in D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.*, u.u...', 0)
+#1 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.*, u.u...')
+#2 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.*, u.u...')
+#3 D:\Lizbeth Perdomo\Documents\blog2\app\Controllers\PostController.php(146): CodeIgniter\Database\BaseConnection->query('select p.*, u.u...')
+#4 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+#5 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Lizbeth Perdomo\Documents\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 D:\Lizbeth Perdomo\Documents\blog2\system\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perd...')
+#9 {main}
+CRITICAL - 2023-10-06 17:00:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'order by autor' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(146): CodeIgniter\Database\BaseConnection->query('select p.*, u.username as aautor, count(*) as 
+		ppa from posts as p join users as u on p.autor = u.id left order by autor')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+ERROR - 2023-10-06 17:00:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'righ join users as u on p.autor = u.id order by autor' at line 2 in D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.*, u.u...', 0)
+#1 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.*, u.u...')
+#2 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.*, u.u...')
+#3 D:\Lizbeth Perdomo\Documents\blog2\app\Controllers\PostController.php(146): CodeIgniter\Database\BaseConnection->query('select p.*, u.u...')
+#4 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+#5 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Lizbeth Perdomo\Documents\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 D:\Lizbeth Perdomo\Documents\blog2\system\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perd...')
+#9 {main}
+CRITICAL - 2023-10-06 17:00:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'righ join users as u on p.autor = u.id order by autor' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(146): CodeIgniter\Database\BaseConnection->query('select p.*, u.username as aautor, count(*) as 
+		ppa from posts as p righ join users as u on p.autor = u.id order by autor')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+ERROR - 2023-10-06 17:11:34 --> mysqli_sql_exception: Unknown column 'ui.username' in 'field list' in D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(u...', 0)
+#1 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(u...')
+#2 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(u...')
+#3 D:\Lizbeth Perdomo\Documents\blog2\app\Controllers\PostController.php(42): CodeIgniter\Database\BaseConnection->query('select concat(u...')
+#4 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Lizbeth Perdomo\Documents\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 D:\Lizbeth Perdomo\Documents\blog2\system\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perd...')
+#9 {main}
+CRITICAL - 2023-10-06 17:11:34 --> Unknown column 'ui.username' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(42): CodeIgniter\Database\BaseConnection->query('select concat(ui.name, " ", ui.lastname) as "Nombre real",
+        ui.username, ui.website, ui.gender, p.created_at 
+        from userinfo as ui
+            join users as u
+                on ui.id = u.id
+                    join posts as p 
+                        on u.id = p.autor 
+                        where p.created_at between "2022/01/01" and "2022/12/31"')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 17:15:05 --> syntax error, unexpected single-quoted string ", ui.lastname) AS "Nombre real...", expecting ")"
+in APPPATH\Controllers\PostController.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Controllers\\PostController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 17:15:07 --> syntax error, unexpected single-quoted string ", ui.lastname) AS "Nombre real...", expecting ")"
+in APPPATH\Controllers\PostController.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Controllers\\PostController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 17:15:07 --> syntax error, unexpected single-quoted string ", ui.lastname) AS "Nombre real...", expecting ")"
+in APPPATH\Controllers\PostController.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Controllers\\PostController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 17:15:11 --> syntax error, unexpected single-quoted string ", ui.lastname) AS "Nombre real...", expecting ")"
+in APPPATH\Controllers\PostController.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Controllers\\PostController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PostController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PostController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PostController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+ERROR - 2023-10-06 17:22:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'gruop by autor order by autor' at line 2 in D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.*, u.u...', 0)
+#1 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.*, u.u...')
+#2 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.*, u.u...')
+#3 D:\Lizbeth Perdomo\Documents\blog2\app\Controllers\PostController.php(152): CodeIgniter\Database\BaseConnection->query('select p.*, u.u...')
+#4 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+#5 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Lizbeth Perdomo\Documents\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 D:\Lizbeth Perdomo\Documents\blog2\system\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perd...')
+#9 {main}
+CRITICAL - 2023-10-06 17:22:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'gruop by autor order by autor' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(152): CodeIgniter\Database\BaseConnection->query('select p.*, u.username as aautor, count(*) as 
+		ppa from posts as p right join users as u on p.autor = u.id gruop by autor order by autor')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-06 17:44:33 --> Undefined variable $posts
+in APPPATH\Views\posts\ejercicio02.php on line 13.
+ 1 APPPATH\Views\posts\ejercicio02.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $posts', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio02.php', 13)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio02.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio02', [], true)
+ 5 APPPATH\Controllers\PostController.php(34): view('posts/ejercicio02', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')

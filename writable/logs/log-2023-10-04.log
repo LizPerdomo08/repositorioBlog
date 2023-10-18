@@ -1,0 +1,123 @@
+CRITICAL - 2023-10-04 14:21:01 --> Undefined variable $totalUsers
+in APPPATH\Views\posts\ejercicio05.php on line 10.
+ 1 APPPATH\Views\posts\ejercicio05.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalUsers', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio05.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(43): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-04 14:21:39 --> Undefined variable $totalUsuarios
+in APPPATH\Views\posts\ejercicio05.php on line 10.
+ 1 APPPATH\Views\posts\ejercicio05.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalUsuarios', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio05.php', 10)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio05.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio05', [], true)
+ 5 APPPATH\Controllers\PostController.php(43): view('posts/ejercicio05', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio05()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-04 14:39:37 --> Undefined variable $nomPost
+in APPPATH\Views\posts\ejercicio02.php on line 11.
+ 1 APPPATH\Views\posts\ejercicio02.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nomPost', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio02.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio02.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio02', [], true)
+ 5 APPPATH\Controllers\PostController.php(32): view('posts/ejercicio02', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-04 14:40:52 --> Undefined variable $nomPost
+in APPPATH\Views\posts\ejercicio02.php on line 11.
+ 1 APPPATH\Views\posts\ejercicio02.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nomPost', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio02.php', 11)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio02.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio02', [], true)
+ 5 APPPATH\Controllers\PostController.php(32): view('posts/ejercicio02', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+ERROR - 2023-10-04 14:57:49 --> mysqli_sql_exception: Unknown column 'ui.name' in 'field list' in D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(u...', 0)
+#1 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(u...')
+#2 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(u...')
+#3 D:\Lizbeth Perdomo\Documents\blog2\app\Controllers\PostController.php(26): CodeIgniter\Database\BaseConnection->query('select concat(u...')
+#4 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+#5 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Lizbeth Perdomo\Documents\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 D:\Lizbeth Perdomo\Documents\blog2\system\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perd...')
+#9 {main}
+CRITICAL - 2023-10-04 14:57:50 --> Unknown column 'ui.name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(26): CodeIgniter\Database\BaseConnection->query('select concat(ui.name, " ", ui.lastname) as "Nombre real", p.title, p.autor, c.category 
+        from posts as p join categories as c on p.category = c.id where c.id = 20')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+ERROR - 2023-10-04 15:34:50 --> mysqli_sql_exception: Unknown column 'ui.username' in 'field list' in D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(u...', 0)
+#1 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(u...')
+#2 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(u...')
+#3 D:\Lizbeth Perdomo\Documents\blog2\app\Controllers\PostController.php(42): CodeIgniter\Database\BaseConnection->query('select concat(u...')
+#4 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Lizbeth Perdomo\Documents\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 D:\Lizbeth Perdomo\Documents\blog2\system\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perd...')
+#9 {main}
+CRITICAL - 2023-10-04 15:34:50 --> Unknown column 'ui.username' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(42): CodeIgniter\Database\BaseConnection->query('select concat(ui.name, " ", ui.lastname) as "Nombre real",
+        ui.username, ui.website, ui.gender, p.created_at 
+        from userinfo as ui
+            join users as u
+                on ui.id = u.id
+                    join posts as p 
+                        on u.id = p.autor 
+                        where p.created_at between "2022/01/01" and "2022/12/31"')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+ERROR - 2023-10-04 15:35:53 --> mysqli_sql_exception: Unknown column 'ui.username' in 'field list' in D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(u...', 0)
+#1 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(u...')
+#2 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(u...')
+#3 D:\Lizbeth Perdomo\Documents\blog2\app\Controllers\PostController.php(42): CodeIgniter\Database\BaseConnection->query('select concat(u...')
+#4 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Lizbeth Perdomo\Documents\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 D:\Lizbeth Perdomo\Documents\blog2\system\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perd...')
+#9 {main}
+CRITICAL - 2023-10-04 15:35:53 --> Unknown column 'ui.username' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(42): CodeIgniter\Database\BaseConnection->query('select concat(ui.name, " ", ui.lastname) as "Nombre real",
+        ui.username, ui.website, ui.gender, p.created_at 
+        from userinfo as ui
+            join users as u
+                on ui.id = u.id
+                    join posts as p 
+                        on u.id = p.autor 
+                        where p.created_at between "2022/01/01" and "2022/12/31"')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')

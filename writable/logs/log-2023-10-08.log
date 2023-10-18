@@ -1,0 +1,336 @@
+CRITICAL - 2023-10-08 00:02:38 --> Undefined array key "id"
+in APPPATH\Views\posts\ejercicio02.php on line 15.
+ 1 APPPATH\Views\posts\ejercicio02.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio02.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio02.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio02', [], true)
+ 5 APPPATH\Controllers\PostController.php(36): view('posts/ejercicio02', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-08 00:02:39 --> Undefined array key "id"
+in APPPATH\Views\posts\ejercicio02.php on line 15.
+ 1 APPPATH\Views\posts\ejercicio02.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio02.php', 15)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio02.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio02', [], true)
+ 5 APPPATH\Controllers\PostController.php(36): view('posts/ejercicio02', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-08 00:02:58 --> Undefined array key "username"
+in APPPATH\Views\posts\ejercicio02.php on line 17.
+ 1 APPPATH\Views\posts\ejercicio02.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio02.php', 17)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio02.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio02', [], true)
+ 5 APPPATH\Controllers\PostController.php(36): view('posts/ejercicio02', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio02()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+ERROR - 2023-10-08 04:32:27 --> mysqli_sql_exception: Unknown column 'ui.birthdat' in 'where clause' in D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Lizbeth Perdomo\Documents\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('select u.userna...', 0)
+#1 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select u.userna...')
+#2 D:\Lizbeth Perdomo\Documents\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select u.userna...')
+#3 D:\Lizbeth Perdomo\Documents\blog2\app\Controllers\PostController.php(160): CodeIgniter\Database\BaseConnection->query('select u.userna...')
+#4 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio10()
+#5 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 D:\Lizbeth Perdomo\Documents\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Lizbeth Perdomo\Documents\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 D:\Lizbeth Perdomo\Documents\blog2\system\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perd...')
+#9 {main}
+CRITICAL - 2023-10-08 04:32:27 --> Unknown column 'ui.birthdat' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(160): CodeIgniter\Database\BaseConnection->query('select u.username, ui.gender, ui.birthday, max(p.id) as
+		"ultimoPost" from posts as p left join users as u on p.autor = u.id left join userinfo as ui on u.id = ui.id
+		where ui.gender = "f" and ui.birthdat between "1993/01/01" and "2023/12/31" group by u.username limit 20')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio10()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-08 04:32:57 --> Undefined array key "created_At"
+in APPPATH\Views\posts\ejercicio10.php on line 14.
+ 1 APPPATH\Views\posts\ejercicio10.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_At"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio10.php', 14)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio10.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio10', [], true)
+ 5 APPPATH\Controllers\PostController.php(175): view('posts/ejercicio10', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio10()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-08 04:35:50 --> Undefined array key "ultimoPosts"
+in APPPATH\Views\posts\ejercicio10.php on line 25.
+ 1 APPPATH\Views\posts\ejercicio10.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ultimoPosts"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio10.php', 25)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio10.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio10', [], true)
+ 5 APPPATH\Controllers\PostController.php(175): view('posts/ejercicio10', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio10()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+CRITICAL - 2023-10-08 04:39:27 --> Undefined array key "ultimoPost"
+in APPPATH\Views\posts\ejercicio10.php on line 27.
+ 1 APPPATH\Views\posts\ejercicio10.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ultimoPost"', 'D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio10.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('D:\\Lizbeth Perdomo\\Documents\\blog2\\app\\Views\\posts\\ejercicio10.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio10', [], true)
+ 5 APPPATH\Controllers\PostController.php(175): view('posts/ejercicio10', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio10()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Lizbeth Perdomo\\Documents\\blog2\\public\\index.php')
+ERROR - 2023-10-08 18:41:52 --> mysqli_sql_exception: Unknown column 'ui.username' in 'field list' in C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(u...', 0)
+#1 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(u...')
+#2 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(u...')
+#3 C:\Users\52222\Videos\blog2\app\Controllers\PostController.php(45): CodeIgniter\Database\BaseConnection->query('select concat(u...')
+#4 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\52222\Videos\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\52222\Videos\blog2\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\...')
+#9 {main}
+CRITICAL - 2023-10-08 18:41:52 --> Unknown column 'ui.username' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(45): CodeIgniter\Database\BaseConnection->query('select concat(ui.name, " ", ui.lastname) as "Nombre real",
+        ui.username, ui.website, ui.gender, p.created_at 
+        from userinfo as ui
+            join users as u
+                on ui.id = u.id
+                    join posts as p 
+                        on u.id = p.autor 
+                        where p.created_at between "2022/01/01" and "2022/12/31"')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\Videos\\blog2\\public\\index.php')
+ERROR - 2023-10-08 18:45:47 --> mysqli_sql_exception: Unknown column 'ui.username' in 'field list' in C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('select concat(u...', 0)
+#1 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select concat(u...')
+#2 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select concat(u...')
+#3 C:\Users\52222\Videos\blog2\app\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select concat(u...')
+#4 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+#5 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\52222\Videos\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\52222\Videos\blog2\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\...')
+#9 {main}
+CRITICAL - 2023-10-08 18:45:47 --> Unknown column 'ui.username' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(63): CodeIgniter\Database\BaseConnection->query('select concat(ui.name, " ", ui.lastname) as "Nombre real",
+        ui.username, ui.website, ui.gender, p.created_at 
+        from userinfo as ui
+            join users as u
+                on ui.id = u.id
+                    join posts as p 
+                        on u.id = p.autor 
+                        where p.created_at between "2022/01/01" and "2022/12/31"')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio04()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\Videos\\blog2\\public\\index.php')
+CRITICAL - 2023-10-08 19:17:45 --> Unmatched '}'
+in APPPATH\Views\posts\ejercicio08.php on line 56.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('posts/ejercicio08', [], true)
+ 3 APPPATH\Controllers\PostController.php(174): view('posts/ejercicio08', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio08()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\Videos\\blog2\\public\\index.php')
+ERROR - 2023-10-08 20:07:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.content, c.category
+				From posts p
+				join categories c on p.category =...' at line 1 in C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.title ...', 0)
+#1 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.title ...')
+#2 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.title ...')
+#3 C:\Users\52222\Videos\blog2\app\Controllers\PostController.php(186): CodeIgniter\Database\BaseConnection->query('SELECT p.title ...')
+#4 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio09()
+#5 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\52222\Videos\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\52222\Videos\blog2\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\...')
+#9 {main}
+CRITICAL - 2023-10-08 20:07:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.content, c.category
+				From posts p
+				join categories c on p.category =...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(186): CodeIgniter\Database\BaseConnection->query('SELECT p.title p.content, c.category
+				From posts p
+				join categories c on p.category = c.id
+				join users u on p autor = u.id
+				where u.profile = (select id from profiles where profile = "admin")')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio09()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\Videos\\blog2\\public\\index.php')
+ERROR - 2023-10-08 20:11:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.content, c.category
+				From posts p
+				join categories c on p.category =...' at line 1 in C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.title ...', 0)
+#1 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.title ...')
+#2 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.title ...')
+#3 C:\Users\52222\Videos\blog2\app\Controllers\PostController.php(186): CodeIgniter\Database\BaseConnection->query('SELECT p.title ...')
+#4 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio09()
+#5 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\52222\Videos\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\52222\Videos\blog2\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\...')
+#9 {main}
+CRITICAL - 2023-10-08 20:11:10 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.content, c.category
+				From posts p
+				join categories c on p.category =...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(186): CodeIgniter\Database\BaseConnection->query('SELECT p.title p.content, c.category
+				From posts p
+				join categories c on p.category = c.id
+				join users u on p autor = u.id
+				where u.profile = (select id from profiles where profile = "admin")')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio09()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\Videos\\blog2\\public\\index.php')
+ERROR - 2023-10-08 20:14:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.content, c.category
+				From posts p
+				join categories c on p.category =...' at line 1 in C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.title ...', 0)
+#1 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.title ...')
+#2 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.title ...')
+#3 C:\Users\52222\Videos\blog2\app\Controllers\PostController.php(186): CodeIgniter\Database\BaseConnection->query('SELECT p.title ...')
+#4 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio09()
+#5 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\52222\Videos\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\52222\Videos\blog2\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\...')
+#9 {main}
+CRITICAL - 2023-10-08 20:14:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.content, c.category
+				From posts p
+				join categories c on p.category =...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(186): CodeIgniter\Database\BaseConnection->query('SELECT p.title p.content, c.category
+				From posts p
+				join categories c on p.category = c.id
+				join users u on p.autor = u.id
+				where u.profile = (select id from profiles where profile = "admin")')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio09()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\Videos\\blog2\\public\\index.php')
+ERROR - 2023-10-08 20:14:25 --> mysqli_sql_exception: Subquery returns more than 1 row in C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.title,...', 0)
+#1 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.title,...')
+#2 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.title,...')
+#3 C:\Users\52222\Videos\blog2\app\Controllers\PostController.php(186): CodeIgniter\Database\BaseConnection->query('SELECT p.title,...')
+#4 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio09()
+#5 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\52222\Videos\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\52222\Videos\blog2\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\...')
+#9 {main}
+CRITICAL - 2023-10-08 20:14:25 --> Subquery returns more than 1 row
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(186): CodeIgniter\Database\BaseConnection->query('SELECT p.title, p.content, c.category
+				From posts p
+				join categories c on p.category = c.id
+				join users u on p.autor = u.id
+				where u.profile = (select id from profiles where profile = "admin")')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio09()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\Videos\\blog2\\public\\index.php')
+ERROR - 2023-10-08 20:15:58 --> mysqli_sql_exception: Subquery returns more than 1 row in C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.title,...', 0)
+#1 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.title,...')
+#2 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.title,...')
+#3 C:\Users\52222\Videos\blog2\app\Controllers\PostController.php(186): CodeIgniter\Database\BaseConnection->query('SELECT p.title,...')
+#4 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio09()
+#5 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\52222\Videos\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\52222\Videos\blog2\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\...')
+#9 {main}
+CRITICAL - 2023-10-08 20:15:58 --> Subquery returns more than 1 row
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(186): CodeIgniter\Database\BaseConnection->query('SELECT p.title, p.content, c.category
+				From posts p
+				join categories c on p.category = c.id
+				join users u on p.autor = u.id
+				where u.profile = (select id from profiles where profile = "admin")')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio09()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\Videos\\blog2\\public\\index.php')
+ERROR - 2023-10-08 20:16:54 --> mysqli_sql_exception: Subquery returns more than 1 row in C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT p.title,...', 0)
+#1 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT p.title,...')
+#2 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT p.title,...')
+#3 C:\Users\52222\Videos\blog2\app\Controllers\PostController.php(186): CodeIgniter\Database\BaseConnection->query('SELECT p.title,...')
+#4 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio09()
+#5 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\52222\Videos\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\52222\Videos\blog2\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\...')
+#9 {main}
+CRITICAL - 2023-10-08 20:16:54 --> Subquery returns more than 1 row
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(186): CodeIgniter\Database\BaseConnection->query('SELECT p.title, p.content, c.category
+				From posts p
+				join categories c on p.category = c.id
+				join users u on p.autor = u.id
+				where u.profile = (select id from profiles where profile = "admin")')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio09()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\Videos\\blog2\\public\\index.php')
+ERROR - 2023-10-08 21:48:22 --> mysqli_sql_exception: Subquery returns more than 1 row in C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\52222\Videos\blog2\system\Database\MySQLi\Connection.php(306): mysqli->query('select p.title,...', 0)
+#1 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select p.title,...')
+#2 C:\Users\52222\Videos\blog2\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select p.title,...')
+#3 C:\Users\52222\Videos\blog2\app\Controllers\PostController.php(185): CodeIgniter\Database\BaseConnection->query('select p.title,...')
+#4 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(919): App\Controllers\PostController->ejercicio09()
+#5 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#6 C:\Users\52222\Videos\blog2\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\52222\Videos\blog2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\52222\Videos\blog2\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\...')
+#9 {main}
+CRITICAL - 2023-10-08 21:48:22 --> Subquery returns more than 1 row
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\PostController.php(185): CodeIgniter\Database\BaseConnection->query('select p.title, p.content, c.category from posts p
+		join categories c on p.category = c.id join users u on p.autor = u.id
+		where u.profile = (select id from profiles where profile = "admin")')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PostController->ejercicio09()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\52222\\Videos\\blog2\\public\\index.php')
