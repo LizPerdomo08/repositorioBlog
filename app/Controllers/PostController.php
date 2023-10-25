@@ -212,28 +212,27 @@ class PostController extends BaseController
         //dd($posts, $p,$u,$ui);
         return view('posts/ejercicio10', $data);
     }
-	public function exportWholeDatabaseToCSV() {
+	
+	public function descargar() {
+
 		$db = \Config\Database::connect();
-		
-		// Nombre de la base de datos (que ya has definido en tu configuración)
-		$databaseName = $db->getDatabase();
 	
-		// Nombre del archivo de salida
-		$filename = 'whole_database_' . date('Y-m-d_H-i-s') . '.csv';
+		$nombreBD = $db->getDatabase();
+
+		$archivo = 'whole_database_' . date('Y-m-d_H-i-s') . '.csv';
 	
-		// Genera el comando para exportar la base de datos completa a CSV
-		$command = "mysqldump -u lizbeth -p Luna2003 $databaseName > $filename 2>&1"; // Reemplaza 'tu_usuario' con tu nombre de usuario de MySQL
-		exec($command, $output, $returnCode);
+		$ruta = "mysqldump -u lizbeth -p Luna2003 $nombreBD > $archivo 2>&1"; 
+		salida($ruta, $importar, $regresarVista);
 	
-		if ($returnCode !== 0) {
+		if ($regresarVista !== 0) {
 			echo "Error al exportar la base de datos: ";
-			foreach ($output as $line) {
-				echo $line . '<br>';
+			foreach ($importar as $datos) {
+				echo $datos . '<br>';
 			}
 		} else {
-			// Descargar el archivo CSV resultante
-			$response = service('response');
-			$response->download($filename, NULL);
+
+			$descarga = servicio('response');
+			$descarga->descargar($archivo, NULL);
 		}
 	}
 }
